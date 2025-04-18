@@ -35,26 +35,27 @@ const Projects = () => {
         
     ]
     return (
-        <div className="bg-black" id="projects">      
-            <h1 className="text-center text-white  bg-black pt-20 pb-20  text-5xl" data-aos="zoom-in">Projectes</h1>
-          <div className="w-full min-h-screen flex justify-evenly items-center md:flex-col flex-row bg-black orbitron-font">
-            {
-                projects.map((val,index)=>(
-                    <Card
-                    
-                    key={index}
-                    about={val.about}
-                    image={val.image}
-                    Button={val.Button}
-                    CardDescription={val["CardDescription"]}
-                    CardTitle={val.CardTitle}
-                    titleHref={val.titleHref}
-                    btnHref={val.btnHref}
-                    />
-                ))
-            }
-        </div>
-        </div>
+       <div className="w-full min-h-screen bg-black orbitron-font px-4">
+  <h1 className="text-center text-white pt-20 pb-20 text-5xl" data-aos="zoom-in">
+    Projects
+  </h1>
+
+  <div className="flex flex-wrap justify-center gap-10">
+    {projects.map((val, index) => (
+      <Card
+        key={index}
+        about={val.about}
+        image={val.image}
+        Button={val.Button}
+        CardDescription={val["CardDescription"]}
+        CardTitle={val.CardTitle}
+        titleHref={val.titleHref}
+        btnHref={val.btnHref}
+      />
+    ))}
+  </div>
+</div>
+
 
     );
 }
