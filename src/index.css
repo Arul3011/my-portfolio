@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+@import "tailwindcss";
+
+/* App.css */
+@keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-wave {
+    animation: wave 10s linear infinite;
+  }
+  
+  
