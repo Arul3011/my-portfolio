@@ -8,6 +8,7 @@ import Projects from './Projects'
 import AOS from 'aos'
 import Contact from './Contact'
 import Footer from './Fotter'
+import Nav from './compountes/Nav'
   
 function App() {
   const [count, setCount] = useState(0)
@@ -20,16 +21,17 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <>
+<div className="scroll-smooth">
      
         <Robo />
     
         <Projects />
         <Home />
         <Contact />
-        {/* <Footer /> */}
+        <Footer />
+        <Nav />
   
-    </>
+    </div>
   )
 }
 

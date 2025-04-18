@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -22,27 +22,29 @@ export default function Footer() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 p-5">
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 mb-6">
-          <FaFacebookF className="hover:text-blue-300 cursor-pointer text-2xl" />
-          <FaTwitter className="hover:text-blue-300 cursor-pointer text-2xl" />
-          <FaLinkedinIn className="hover:text-blue-300 cursor-pointer text-2xl" />
-          <FaInstagram className="hover:text-blue-300 cursor-pointer text-2xl" />
+          <a href="https://x.com/Arul60824675?t=QhAEw3Nj428_KY_V-BR3Tw&s=09" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="hover:text-blue-300 cursor-pointer text-2xl" />
+          </a>
+          <a href="https://in.linkedin.com/in/arul-y-558491270" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn className="hover:text-blue-300 cursor-pointer text-2xl" />
+          </a>
+          <a href="https://www.instagram.com/arul3011_/?igsh=OWoxYnluZTlyNGYy" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="hover:text-blue-300 cursor-pointer text-2xl" />
+          </a>
+          <a href="https://github.com/Arul3011" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="hover:text-blue-300 cursor-pointer text-2xl" />
+          </a>
+
         </div>
 
-        {/* Navigation Links */}
-        <div className="flex justify-center space-x-6 text-sm mb-4">
-          <a href="#" className="hover:text-blue-200">Home</a>
-          <a href="#" className="hover:text-blue-200">About</a>
-          <a href="#" className="hover:text-blue-200">Services</a>
-          <a href="#" className="hover:text-blue-200">Team</a>
-          <a href="#" className="hover:text-blue-200">Contact</a>
-        </div>
+     
 
         {/* Copyright */}
-        <div className="text-center text-xs">
-          ©2024 Nadine Coelho All Rights Reserved
+        <div className="text-center text-xs mb-5">
+          ©ARUL
         </div>
       </div>
     </footer>

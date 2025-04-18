@@ -7,7 +7,7 @@ export default function Home() {
     AOS.init();
   }, []);
   return (
-    <section className=" w-full flex justify-around items-center flex-col bg-black orbitron-font ">
+    <section id="about" className=" w-full flex justify-around items-center flex-col bg-black orbitron-font ">
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
@@ -19,7 +19,7 @@ export default function Home() {
       </style>
 
       {/* Left - About */}
-      <div className="px-6 md:px-10 w-full md:w-1/2 text-white text-center md:text-center"  data-aos="fade-right">
+      <div className="px-6 md:px-10 w-full md:w-1/2 text-white text-center md:text-center my-10"  data-aos="fade-right">
         <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">
           About<span className="text-cyan-400">.</span>
         </h1>
@@ -29,7 +29,7 @@ export default function Home() {
       </div>
 
       {/* Right - Expertise */}
-      <div className="px-5 md:px-10 w-full md:w-1/2 text-white text-center md:text-center " data-aos="fade-left">
+      <div className="px-5 md:px-10 w-full md:w-1/2 text-white text-center md:text-center " data-aos="fade-right">
         <h2 className="text-2xl md:text-4xl font-semibold drop-shadow-md">
           Expertise<span className="text-cyan-400">_</span>
         </h2>
